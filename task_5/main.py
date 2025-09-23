@@ -1,0 +1,22 @@
+x = int(input())
+a = int(x / 10000000)
+b = int((x % 10000000) / 1000000)
+c = int((x % 1000000) / 100000)
+d = int((x % 100000) / 10000)
+e = int((x % 10000) / 1000)
+f = int((x % 1000) / 100)
+g = int((x % 100) / 10)
+h = int(x % 10)
+if x >= 10000000 and x < 100000000:
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    print(e)
+    print(f)
+    print(g)
+    print(h)
+    z = a+b+c+d+e+f+g+h
+    print(f"Сумма всех цифр в числе равна {z}")
+else:
+    print("Число имеет больше, либо меньше 8 разрядов") 
