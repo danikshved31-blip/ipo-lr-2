@@ -1,0 +1,12 @@
+import math 
+print("введите x")
+x = float(input())
+print(f"x = {x} ")
+print("введите y")
+y = float(input())
+print(f"y = {y} ")
+print("введите z")
+z = float(input()) 
+print(f"z = {z} ")
+h = float((pow( x, y+1 ) + math.exp(y-1)) / ( 1+x * abs( y-math.tan(z)))) * (1 + abs(y - x)) + (pow(abs(y - x), 2) / 2) - (pow(abs(y - x), 3) / 3)
+print(f"Ответ на урванение = {h}")
